@@ -6,12 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
     <title>iPhone - Apple (Brasil)</title>
 </head>
 
 <body>
-    <div>
-        <p>Menu Superior</p>
+    <div class="purpleBox">
+        <img class="logo" src="./img/apple-logo.png">
+        <ul>
+            <li>Mac</li>
+            <li>iPhone</li>
+            <li>iPad</li>
+            <li>Watch</li>
+            <li>AirPods</li>
+            <li>Acessórios</li>
+            <li>Suporte</li>
+        </ul>
     </div>
     <div class="blueBox">
         <div>
@@ -23,15 +33,16 @@
             <button class="button">Comprar</button>
             <p class="chooseColor">Escolha sua cor:</p>
             <div>
-                <button class="blue changeColor"></button>
-                <button class="yellow changeColor"></button>
-                <button class="white changeColor"></button>
-                <button class="black changeColor"></button>
-                <button class="red changeColor"></button>
-                <button class="purple changeColor"></button>
+                <button onclick="changeColor(`#81A5C4`); changeImage(`./img/iphone-blue.png`)" class="blue changeColor"></button>
+                <button onclick="changeColor(`#f7da47`); changeImage(`./img/iphone-yellow.png`)" class="yellow changeColor"></button>
+                <button onclick="changeColor(`#c1c1c1`); changeImage(`./img/iphone-white.png`)" class="white changeColor"></button>
+                <button onclick="changeColor(`#272d33`); changeImage(`./img/iphone-black.png`)" class="black changeColor"></button>
+                <button onclick="changeColor(`#b50012`); changeImage(`./img/iphone-red.png`)" class="red changeColor"></button>
+                <button onclick="changeColor(`#ede7f1`); changeImage(`./img/iphone-purple.png`)" class="purple changeColor"></button>
             </div>
         </div>
-        <img src="./img/iphone-blue.png">
+        <div class="circle"></div>
+        <img class="iphone" src="./img/iphone-blue.png">
     </div>
 
 </body>
